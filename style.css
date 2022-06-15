@@ -1,0 +1,307 @@
+* {
+    background: rgb(51,74,92);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.nav-bar {
+    text-align: center;
+}
+
+.nav-bar ul {
+    display: inline-flex;
+    color: #fff;
+    list-style-type: none;
+}
+
+.nav-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.nav-bar ul li a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
+}
+
+.active, .nav-bar ul li:hover {
+    background: #1e222053;
+    border-radius: 3px;
+}
+
+.logo {
+    color: #fff;
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 15px 80px 15px 15px;   
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+li {
+    list-style-position: inside;
+}
+
+footer {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.name {
+    margin: 20px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.name h1 {
+    font-size: 3.5rem;
+}
+  
+.about {
+    border-radius: 5px;
+    background-color: rgb(60, 80, 100);
+    margin: 20px;
+    padding: 20px;
+}
+
+.about .hobby {
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.about .priority {
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.about .skill {
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.hobby .priority .skill {
+    text-align: left;
+}
+ 
+.form {
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.btn {
+    background-color: rgb(60, 80, 100);
+    border-color: rgb(60, 80, 100);
+    border-radius: 5px;
+    font-size: large;
+    margin: 20px;
+    padding: 30px 60px;
+} 
+/* 40 70 90 */
+
+.btn a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: rgb(40, 70, 90);
+    color: #fff;
+}
+
+
+/* Typing Animation */
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid #fff;
+    font-size: 1.6rem;
+    width: 0;
+    white-space: nowrap;
+    animation: typing 3s steps(50, end) forwards;
+}
+
+/* "overflow: hidden;" and a "width: 0;", to make sure the text content isn’t revealed until the typing effect has started.
+"border-right: .15em solid orange;", to create the typewriter cursor. */
+
+/* Before making the typing effect, in order to stop the cursor at the last letter of the typed-out element once it has been fully typed out, the way a typewriter (or really a word processor) would, we’ll create a container for the typed-out element and add display: inline-block; */
+
+.container {
+    display: inline-block;
+}
+
+/* The typewriter animation is going to create the effect of the text inside the typed-out element being typed out, letter by letter. We’ll use the @keyframes CSS animation rule: */
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+
+/* As you can see, all this animation does is change an element’s width from 0 to 100%.
+
+Now, we’ll include this animation in our typed-out class and set its animation direction to forwards to make sure the text element won’t go back to width: 0 after the animation has finished: */
+
+/* So far, our text is revealed, but in a smooth way that doesn’t reveal the text letter by letter. This is a start, but obviously it’s not what a typewriter effect looks like.
+
+To make this animation reveal our text element letter by letter, or in steps, the way a typewriter would, we need to split the typing animation included by the typed-out class into steps in order for it to look like it’s being typed out. This is where the steps() CSS function comes in: */
+
+/* Contact Page */
+
+main .contact-form {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(60, 80, 100);
+    font-family: "lato", sans-serif;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact {
+    position: relative;
+    height: 45px;
+    max-width: 90%;
+    margin-bottom: 17px;
+}
+
+.contact .input {
+    position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        border: 1px solid #DADCE0;
+        border-radius: 7px;
+        font-size: 16px;
+        padding: 0 20px;
+        outline: none;
+        background: none;
+        z-index: 1;
+}
+
+/* Registration Page */
+
+main .reg-form {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(60, 80, 100);
+    font-family: "lato", sans-serif;
+}
+
+.signup h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.reg-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.reg {
+    position: relative;
+    height: 45px;
+    max-width: 90%;
+    margin-bottom: 17px;
+}
+
+.reg .input {
+    position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        border: 1px solid #DADCE0;
+        border-radius: 7px;
+        font-size: 16px;
+        padding: 0 20px;
+        outline: none;
+        background: none;
+        z-index: 1;
+}
+
+.reg .input:focus {
+    border: 1px solid rgb(60, 80, 100);
+}
+
+/* Login-form */
+
+main .login-form {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(60, 80, 100);
+    font-family: "lato", sans-serif;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+}
+
+.login {
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgb(40, 70, 90);  
+}
+
+.login-title {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.login-input {
+    position: relative;
+    height: 45px;
+    max-width: 90%;
+    margin-bottom: 17px;
+}
+
+.login-input input {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        border: 1px solid #DADCE0;
+        border-radius: 7px;
+        font-size: 16px;
+        padding: 0 20px;
+        outline: none;
+        background: none;
+        z-index: 1;
+}
+
+.login-input input:focus {
+    border: 1px solid rgb(60, 80, 100);
+}
